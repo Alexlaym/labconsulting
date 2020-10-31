@@ -1,0 +1,1383 @@
+/* ------ Подключение шрифтов ------ */
+
+@font-face {
+	font-family: 'Museo Sans 100';
+	src: url('../fonts/MuseoSansCyrl-100.eot');
+	/* IE9 Compat Modes */
+	src: url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/MuseoSansCyrl-100.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/MuseoSansCyrl-100.woff') format('woff'), /* Pretty Modern Browsers */
+	url('../fonts/MuseoSansCyrl-100.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('../fonts/MuseoSansCyrl-100.svg#svgFontName') format('svg');
+	/* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Museo Sans 300';
+	src: url('../fonts/MuseoSansCyrl-300.eot');
+	/* IE9 Compat Modes */
+	src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/MuseoSansCyrl-300.woff') format('woff'), /* Pretty Modern Browsers */
+	url('../fonts/MuseoSansCyrl-300.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('../fonts/MuseoSansCyrl-300.svg#svgFontName') format('svg');
+	/* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Museo Sans 700';
+	src: url('../fonts/MuseoSansCyrl-700.eot');
+	/* IE9 Compat Modes */
+	src: url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/MuseoSansCyrl-700.woff') format('woff'), /* Pretty Modern Browsers */
+	url('../fonts/MuseoSansCyrl-700.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('../fonts/MuseoSansCyrl-700.svg#svgFontName') format('svg');
+	/* Legacy iOS */
+}
+
+/* ------ Спецификация ------ */
+
+body {
+	font-family: 'Museo Sans 300';
+	color: #fff;
+	padding: 0;
+	letter-spacing: 0em;
+	margin: 0;
+	font-size: 14px;
+	min-width: 320px;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.4em;
+	margin-bottom: 1em;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Museo Sans 700';
+	line-height: 1.6em;
+	margin: 0;
+	color: #081d42;
+}
+
+h1 {
+	font-size: 58px;
+}
+
+h2 {
+	font-size: 29.17px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 21px;
+}
+
+h5 {
+	font-size: 19px;
+}
+
+h6 {}
+
+.section-title {
+	color: #081d42;
+	font-size: 29px;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+	color: inherit;
+}
+
+input, input:hover, input:focus, input:active, button, button:hover, button:focus, button:active {
+	outline: none;
+}
+
+.btn {
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+	font-family: 'Museo Sans 700';
+	transition: all 0.3s ease;
+	border-radius: 0;
+	box-shadow: 0 6px 0 0 #149d6f;
+	transition: all 1s ease;
+	background: #1cb883;
+}
+
+.btn:hover {
+	transition: all 0.3s ease;
+}
+
+.btn:active {
+	transition: all 0.3s ease;
+	box-shadow: none;
+	margin-top: 8px;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+.menu__item a:hover {
+	color: #b81c31;
+	transition: all 0.5s ease;
+}
+
+/* ----- Modal ----- */
+
+.form {
+	max-width: 412px;
+	-webkit-box-shadow: 0 4px 46px rgba(0, 0, 0, 0.41);
+	box-shadow: 0 4px 46px rgba(0, 0, 0, 0.41);
+	border-radius: 5px;
+	background-color: #ffffff;
+	text-align: center;
+	padding: 3rem;
+}
+
+.form__title {
+	color: #081d42;
+	font-size: 21px;
+	margin-bottom: 16px;
+}
+
+.form__descr {
+	max-width: 302px;
+	color: #404048;
+	font-size: 14px;
+	letter-spacing: 0.002em;
+	margin-bottom: 35px;
+}
+
+.form__descr {
+	max-width: 302px;
+	color: #404048;
+	font-size: 14px;
+	letter-spacing: 0.002em;
+	margin-bottom: 35px;
+}
+
+.form input {
+	width: 100%;
+	color: #404048;
+	padding: 14px 0;
+	border: none;
+	border-bottom: 2px solid #babbc3;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.form .btn {
+	border: none;
+	border-bottom: 4px solid #149d6f;
+	max-width: 100%;
+	margin-top: 29px;
+	color: #ffffff;
+	width: 100%;
+	min-width: 140px;
+	padding: 10px 0;
+	display: block;
+	font-size: 13px;
+	font-family: "Museo Sans Cyrl 700";
+	letter-spacing: 0.0001em;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.fa-phone:hover {
+	cursor: pointer;
+}
+
+.modal-content {
+	border: none;
+	background: none;
+}
+
+#page-preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #000;
+	z-index: 100500;
+}
+
+/* ------ Прелоадер ------ */
+
+#page-preloader .spinner {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: url('/images/spinner.gif') no-repeat 50% 50%;
+	margin: -16px 0 0 -16px;
+}
+
+/* ------ Слайдер ------ */
+
+.slick-prev, .slick-next {
+	font-size: 25px;
+	color: #4c4c54!important;
+	top: 25%;
+	cursor: pointer;
+}
+
+.slick-prev {
+	left: 10%;
+}
+
+.slick-next {
+	right: 10%;
+}
+
+.slick-prev:hover {
+	left: 11%;
+}
+
+.slick-next:hover {
+	right: 11%;
+}
+
+.slick-prev:before {
+	display: none;
+}
+
+.slick-next:before {
+	display: none;
+}
+.slick-dots li button::before {
+    font-family: slick;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 11px;
+    height: 11px;
+    content: "";
+    opacity: 1;
+    background: #bdc5d6;
+}
+
+/* ------ Первый экран ------ */
+
+.header {
+	background: url(../img/background.jpg) no-repeat center top / cover fixed;
+	border-bottom: 16px solid rgba(255, 255, 255, 0.15);
+}
+
+.navigation {
+	padding: 17px 0 7px;
+	background: rgba(191, 194, 200, 0.41);
+	border-top: 5px solid #58647a;
+	border-bottom: 4px solid rgba(88, 100, 122, 0.08);
+	position: relative;
+	background-clip: padding-box;
+}
+
+.logo {
+	max-width: 100%;
+}
+
+.over {
+	background: rgba(153, 204, 255, 0.47);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 -15px 0 0 rgba(197, 201, 222, 0.27) inset;
+}
+
+.menu__item a {
+	font-family: 'Museo Sans 700';
+	color: #3f4b60;
+	font-size: 17px;
+	line-height: 1;
+}
+
+.menu__item_last a {
+	padding-right: 0;
+}
+
+.tel {
+	font-size: 13px;
+	color: #fff;
+	width: 156px;
+	max-width: 100%;
+	min-width: 50px;
+	white-space: nowrap;
+	padding: 9px 0;
+}
+
+.fa-phone {
+	margin-right: 6px;
+	color: #46e6b0;
+}
+
+/* ------ Offer ------ */
+
+.offer {
+	position: relative;
+	max-width: 455px;
+	padding: 80px 0 130px;
+}
+
+.offer__title {}
+
+.offer__title span {
+	text-transform: uppercase;
+}
+
+.offer__text {
+	font-size: 29px;
+	color: #081d42;
+	font-family: 'Museo Sans 100';
+	line-height: 1.27;
+	max-width: 480px;
+	margin-bottom: 25px;
+}
+
+.icons {
+	background: rgba(247, 249, 251, 0.70);
+	border: 3px solid rgba(255, 255, 255, 0.33);
+	border-radius: 3px;
+	padding: 8px 18px;
+	max-width: 170px;
+	display: inline-block;
+	background-clip: padding-box;
+	justify-content: space-between;
+}
+
+.icons__item {}
+
+.facebook {
+	color: #3d6ca8;
+}
+
+.twitter {
+	color: #43c9fd;
+}
+
+.telegram {
+	color: #25a3d4;
+}
+
+.icons__item i {
+	font-size: 18px;
+	border: 1px solid;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 1.44;
+}
+
+/* ------ Второй экран ------ */
+
+.advantages {
+	background: #f1f1f3;
+	padding: 47px 0 85px 0;
+	position: relative;
+}
+
+.advantages__title {
+	margin-bottom: 35px;
+}
+
+.advantage__img {
+	height: 119px;
+	width: 119px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	background: #c8cbdb;
+	line-height: 8.4em;
+	border-radius: 50%;
+}
+
+.advantage__title {
+	margin: 0 0 5px 0;
+}
+
+.advantage__text {
+	color: #404048;
+	letter-spacing: 0.02em;
+	line-height: 1.22;
+}
+
+.advantages__btn {
+	font-size: 16px;
+	width: 170px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 8px 0;
+	bottom: -24px;
+}
+
+/* ------ Третий экран ------ */
+
+.qualities {
+	padding: 105px 0 65px;
+}
+
+.quality {
+	text-align: center;
+}
+
+.quality__figure {
+	width: 85px;
+	height: 85px;
+	margin: 0 auto;
+	padding: 5px;
+	background: #102e62;
+	border-radius: 50%;
+}
+
+.quality__letter {
+	font-family: 'Museo Sans 100';
+	font-size: 50px;
+	color: #fff;
+}
+
+.quality__title {
+	font-family: 'Museo Sans 100';
+	letter-spacing: 0;
+	margin: 4px 0 6px;
+}
+
+.quality__title::first-letter {
+	color: red;
+}
+
+.quality__red {
+	color: red;
+}
+
+.quality__text {
+	line-height: 1.25;
+	color: #404048;
+	letter-spacing: 0.02em;
+}
+
+/* ------ Четвёртый экран ------ */
+
+.mission {
+	padding: 33px 0 27px;
+	background: #616d81;
+}
+
+.mission__title, .news__title {
+	color: #fff;
+	font-size: 23px;
+	padding-bottom: 7px;
+	border-bottom: 3px solid #6b768a;
+	margin-bottom: 18px;
+}
+
+.mission__details {
+	margin-right: 0 auto;
+}
+
+.mission p {
+	font-size: 15px;
+	letter-spacing: 0;
+	line-height: 1.22;
+	opacity: 0.67;
+}
+
+.mission__info_left {
+	max-width: 468px;
+	margin-right: 10px;
+}
+
+.mission__info_right {
+	max-width: 370px;
+}
+
+.news__info {
+	display: flex;
+	align-items: flex-start;
+	padding: 0 0 4px 0;
+	position: relative;
+	max-width: 250px;
+	margin-bottom: 18px;
+}
+
+.news__info:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left: 0;
+	bottom: 0;
+	background-color: #6b768a;
+}
+
+.news__info img {
+	height: 55px;
+	width: 55px;
+	object-fit: cover;
+	margin-right: 12px;
+}
+
+.news__text h6 {
+	font-size: 12.5px;
+	letter-spacing: 0.02em;
+	color: #fff;
+}
+
+.news__text time {
+	font-size: 10.42px;
+}
+
+.mission__btn {
+	width: 174px;
+	border: 2px solid #fff;
+	margin-top: 30px;
+	background: none;
+	padding: 8px 0;
+	box-shadow: none;
+}
+
+/* ------ Пятый экран ------ */
+
+.info {
+	background: #3a4456;
+	padding: 35px 0 42px;
+}
+
+.info__title {
+	color: #fff;
+	margin-bottom: 12px;
+}
+
+.info a {
+	color: #fff;
+	opacity: 0.46;
+}
+
+.info a:hover {
+	opacity: 0.76;
+}
+
+.m-top {
+	margin-top: 40px;
+}
+
+/* ------ Шестой экран ------ */
+
+.footer {
+	padding: 0 0 32px;
+	background: #1f2531;
+	color: #acafb3;
+	border-bottom: 20px solid #58647a;
+}
+
+.footer__logo img {
+	max-width: 100%;
+}
+
+.text__p-top {
+	margin-top: 35px;
+	font-family: 'Museo Sans 100';
+	letter-spacing: 0;
+}
+
+.footer__text {
+	font-size: 12px;
+}
+
+.footer__text_up {
+	max-width: 195px;
+	margin-bottom: 6px;
+	line-height: 1.2em;
+}
+
+.footer__text_down {
+	max-width: 105px;
+	padding-top: 5px;
+}
+
+.footer__center {
+	margin-bottom: 7px;
+	padding-top: 5px;
+	max-width: 185px;
+}
+
+.footer__icon {
+	height: 25px;
+	width: 26px;
+	margin-right: 10px;
+	padding: 3px 5px;
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid #acafb3;
+}
+
+.footer-info__text_up {
+	font-size: 10px;
+}
+
+.footer-info__text_down {
+	margin-top: -13px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.right, .right__link {
+	font-size: 12px;
+}
+
+.right__down {
+	margin-top: -13px;
+	margin-bottom: -4px;
+	font-family: 'Museo Sans 700';
+	font-size: 12px;
+}
+
+.right__link {
+	border-bottom: 1px solid #acafb3;
+	color: #acafb3;
+}
+
+.footer .tel {
+	margin-top: 68px;
+}
+
+/* ------ Первый экран  About------ */
+
+.main {
+	padding: 53px 0 50px;
+}
+
+.header-iner {
+	background-color: #fafafb;
+}
+
+.main-title {
+	color: #081d42;
+	font-size: 38px;
+}
+
+.breadcrumb {
+	background: #fafafb;
+	padding: 0;
+}
+
+.breadcrumb__list {
+	display: flex;
+	font-size: 16px;
+}
+
+.breadcrumb__item {
+	color: #49556b;
+	text-decoration: underline;
+	font-style: 15px;
+}
+
+.breadcrumb__item:not(:first-child):before {
+	content: '→';
+	font-size: 12px;
+	display: inline-block;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+
+.breadcrumb__item:last-child {
+	color: #7e838d;
+	text-decoration: none;
+}
+
+.main-links {
+	color: #a1a6af;
+	font-family: "Museo Sans 700";
+	justify-content: space-around;
+	max-width: 568px;
+	font-size: 16px;
+}
+
+.main-links a {
+	padding: 10px 15px 12px 18px;
+	border: 2px solid transparent;
+}
+
+.activ-item a {
+	color: #b81c31;
+	border-color: #b81c31;
+}
+
+.main-links a:hover {
+	color: #b81c31;
+}
+
+/* ------ Второй экран  About------ */
+
+.excellence {
+	padding: 48px 0 42px;
+}
+
+.excellence__title {
+	letter-spacing: 0.025em;
+	margin-bottom: 22px;
+}
+
+.excellence__descr {
+	font-size: 15px;
+	color: #404048;
+	line-height: 1.2em;
+	letter-spacing: 0.02em;
+	max-width: 565px;
+}
+
+.excellence .list {
+	margin-top: 39px;
+	border-top: 2px solid #e5e6e8;
+}
+
+.excellence .list__item {
+	position: relative;
+	margin-top: 34px;
+	padding-left: 99px;
+	padding-bottom: 21px;
+}
+
+.excellence .list__item:before {
+	content: '';
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background-image: url(../img/Libra.png);
+	left: 3px;
+	top: 4px;
+}
+
+.excellence .list__title {
+	color: #081d42;
+	font-size: 18px;
+	letter-spacing: 0.03em;
+	margin-bottom: 11px;
+}
+
+.excellence .list__text {
+	color: #404048;
+	font-size: 14px;
+	letter-spacing: 0.28px;
+	line-height: 1.2;
+}
+
+.excellence .list__item:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left: 0;
+	bottom: 0;
+	background-color: #e5e6e8;
+	max-width: 960px;
+}
+
+/* ------ Третий экран  About------ */
+
+.gallery {
+	padding: 0 0 70px;
+}
+
+.gallery__title {
+	margin-bottom: 36px;
+	letter-spacing: 0.02em;
+}
+
+.gallery__item {
+	position: relative;
+	max-width: 460px;
+}
+
+.gallery__overlay {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(58, 68, 86, 0.69);
+	background-image: url(../img/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	border: 7px solid #9a97a7;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.gallery img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.gallery__overlay:hover, :focus {
+	opacity: 1;
+	transition: all 1s ease;
+}
+
+.gallery__overlay {
+	cursor: pointer;
+}
+
+/* ------ Первый экран  Services------ */
+
+.attendance .main-links__link {}
+
+.font {
+	font-size: 13px;
+	display: block;
+	font-family: 'Museo Sans 300';
+}
+
+.main-links__link {
+	padding: 11px;
+	border-radius: 3px;
+	display: block;
+}
+
+.main-links-3 a {
+	padding: 11px 11px 11px 15px;
+}
+
+.main-links-3 a:hover {
+	color: #b81c31;
+}
+
+.main-links-3 {
+	padding-top: 18px;
+	max-width: 645px;
+}
+
+/* ------ Второй экран  Services------ */
+
+.lawyers {
+	background: linear-gradient(rgba(90, 108, 138, 0.8), rgba(93, 111, 139, 0.8)), url(../img/agents.jpg) center center/cover;
+	color: #ffffff;
+	padding: 40px 0;
+	align-items: center;
+}
+
+.lawyers__img {}
+
+.lawyers__title {
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 1em;
+	letter-spacing: 0.02em;
+	margin-bottom: 19px;
+	color: #fff;
+}
+
+.lawyers__text {
+	font-size: 15px;
+	letter-spacing: 0.02em;
+	line-height: 1.2;
+	font-family: 'Museo Sans 300';
+	max-width: 344px;
+}
+
+.lawyers__descr {}
+
+.lawyers-links {
+	padding: 18px 30px;
+	border-radius: 5px;
+	border: 2px solid #9698a4;
+}
+
+.lawyers-links__item:not(:last-child) {
+	margin-bottom: 11.5px;
+}
+
+.lawyers-links__item {
+	font-size: 15px;
+	display: block;
+	letter-spacing: 0.03em;
+}
+
+.lawyers-links a:before {
+	content: '→ ';
+}
+
+/* ------ Третий экран  Services------ */
+
+/* ------ Левая часть------ */
+
+.information {
+	color: #404048;
+}
+
+.information__wrapper {
+	padding-bottom: 50px;
+}
+
+.information__title {
+	letter-spacing: 0.02em;
+	margin: 50px 0 18px;
+}
+
+.information__text p {
+	font-size: 15px;
+	max-width: 774px;
+	margin-bottom: 37px;
+	letter-spacing: 0.02em;
+	line-height: 1.2;
+}
+
+.information__text p:not(:last-child) {
+	margin-bottom: 18px;
+}
+
+.information .consult {
+	max-width: 470px;
+	background: url(../img/Conference.png) no-repeat 95% 84%;
+	padding: 23px 32px 15px;
+	border-radius: 3px;
+	border: 1px solid #e3e4e6;
+}
+
+.information .consult__title {
+	color: #414449;
+	font-size: 16px;
+	letter-spacing: 0.01em;
+	margin-bottom: 13px;
+}
+
+.information .consult__wrap {
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.information .consult .btn {
+	margin-right: 17px;
+}
+
+.button_red {
+	width: 157px;
+	padding: 8px 0;
+	color: #b81c31;
+	font-size: 14px;
+	letter-spacing: 0.28px;
+	border: 2px solid #b81c31;
+	border-radius: 2px;
+	background: none;
+	box-shadow: none;
+}
+
+.information .consult__tel {
+	color: #585f6b;
+	font-family: "Museo Sans 700";
+	font-size: 14px;
+	letter-spacing: 0.02em;
+}
+
+.information .consult__descr {
+	max-width: 240px;
+	color: #888d95;
+	font-size: 12px;
+	letter-spacing: 0.24px;
+	line-height: 1.2;
+}
+
+/* ------ Правая часть------ */
+
+.sidebar {
+	height: 100%;
+	background-color: #fafafb;
+	width: 379px;
+	padding: 45px 0 145px 0; 
+}
+
+.sidebar__title {
+	color: #58647a;
+	font-size: 18px;
+	margin-bottom: 40px;
+	margin-left: 30px;
+}
+
+.sidebar__wrap {
+	border-top: 1px solid #dfdfe8;
+	margin-bottom: 46px;
+	margin-top: 33px;
+}
+
+.sidebar__wrap li {}
+
+.sidebar__wrap a {
+	display: block;
+	color: #747487;
+	font-family: "Museo Sans 700";
+	font-size: 15px;
+	max-width: 100%;
+	border-bottom: 1px solid #dfdfe8;
+	position: relative;
+	line-height: 1.4;
+	padding: 10px 20px 11px 58px;
+}
+
+.sidebar__item:before {
+	content: '';
+	position: absolute;
+	left: 30px;
+	top: 21px;
+	width: 11px;
+	height: 11px;
+	border-radius: 2px;
+	background-color: #747487;
+	opacity: 0.57;
+	margin-top: -8px;
+}
+
+.slider__img {
+	margin: auto;
+}
+
+.slider__item {
+	padding: 0 25px;
+	outline: none;
+}
+
+.slider__title {
+	color: #747487;
+	font-size: 15px;
+	margin-top: 16px;
+	margin-bottom: 9px;
+}
+
+.slider__text {
+	color: #404048;
+	font-family: "Museo Sans 300";
+	font-size: 13px;
+	max-width: 280px;
+	margin: 0 auto;
+	margin-bottom: 12px;
+	letter-spacing: 0.02em;
+	line-height: 1.2;
+}
+
+.slider__link {
+	color: #2c60a0;
+	font-size: 14px;
+}
+
+/* ------ Первый экран  Services------ */
+
+.main-links-4 a {
+	padding: 11px 11px 11px 15px;
+}
+
+.main-links-4 a:hover {
+	color: #b81c31;
+}
+
+.main-links-4 {
+	justify-content: center;
+	max-width: 585px;
+}
+
+/* ------ Второй экран  Services------ */
+
+.map {
+	position: relative;
+}
+
+.map__label {
+	position: absolute;
+	max-width: 470px;
+	right: 4.2%;
+	top: 10.2%;
+	background-color: rgba(58, 68, 86, 0.75);
+	border-radius: 5px;
+	color: #fff;
+	padding: 14px 16px 50px 34px;
+	font-size: 12px;
+}
+
+.map__label:before {
+	content: '';
+	position: absolute;
+	border: 25px solid transparent;
+	border-right: 25px solid rgba(58, 68, 86, 0.75);
+	left: -50px;
+}
+
+.map__topline {
+	border-bottom: 1px solid #fff;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 8px;
+	margin-bottom: 15px;
+	margin-bottom: 49px;
+}
+
+.map__title {
+	font-size: 21px;
+	color: #fff;
+}
+
+.map .links {
+	background: transparent;
+	box-shadow: none;
+}
+
+.links {
+	width: 173px;
+	height: 46px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.8);
+	justify-content: space-evenly;
+}
+
+.map__label a {
+	font-size: 16px;
+	color: #fff;
+}
+
+.links__item_fb {
+	color: #3465a3;
+}
+
+.links__item {
+	width: 30px;
+	height: 30px;
+	font-size: 17px;
+	text-align: center;
+	line-height: 28px;
+	border: 2px solid;
+}
+
+.map .links i {
+	margin: 0 auto;
+}
+
+.map__label i {
+	font-size: 14px;
+	margin-right: 15px;
+	color: #fff;
+}
+
+.map__label-body {
+	justify-content: space-around;
+}
+
+.map__column {
+	width: 50%;
+}
+
+/* Media Queries */
+
+/* 768 - 992 px */
+
+@media screen and (max-width: 992px) {
+	.advantages .row>div {
+		margin: auto;
+	}
+	.news__info {
+		max-width: 100%;
+	}
+	.news__info:after {
+		max-width: 40%;
+	}
+	.info .row>div {
+		margin-bottom: 20px;
+	}
+	.quality, .mission__btn {
+		margin-bottom: 40px;
+	}
+	.news__info {
+		margin-bottom: 30px;
+	}
+	.main-title {
+		text-align: center;
+	}
+	.breadcrumb__list, .main-links {
+		margin: auto;
+	}
+	.sidebar, .consult {
+		width: 100%;
+		margin-left: 0;
+	}
+	.information .consult {
+		margin-bottom: 30px;
+		max-width: 100%;
+	}
+	.slider__text {
+		max-width: 80%;
+	}
+	.map__label {
+		position: static;
+		max-width: 100%;
+		margin: 20px 0;
+	}
+	/* Гамбургер */
+	.menu-open {
+		background: none;
+		border: 0;
+		color: #3f4b60;
+		font-size: 23px;
+		cursor: pointer;
+	}
+	.menu-active {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		flex-direction: column;
+		justify-content: center;
+		position: absolute;
+		z-index: 5;
+		width: 100%;
+		background: rgba(191, 194, 200, 0.8);
+		text-align: center;
+		top: 10px;
+		transition: all 1s ease;
+	}
+	.menu-active .menu__item {
+		margin: 30px 5% 30px 0px;
+	}
+	.order {
+		order: 1;
+	}
+}
+
+/* 576 - 768 px */
+
+@media screen and (max-width: 768px) {
+	.logo, .footer-logo {
+		max-width: 95%;
+	}
+	.news__info:after {
+		max-width: 100%;
+	}
+	.tel {
+		max-width: 85%;
+		padding: 5px;
+		font-size: 11px;
+	}
+	.advantages .row>div {
+		margin-bottom: 40px;
+	}
+	.mission__details {
+		flex-direction: column;
+	}
+	.mission__info_right {
+		max-width: 100%;
+	}
+	.info .row>div {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.footer {
+		text-align: center;
+	}
+	.footer p, span {
+		margin: auto;
+	}
+	.footer .footer__center {
+		max-width: 180px;
+		margin: 0 auto 30px;
+	}
+	.gallery__item {
+		margin-bottom: 20px;
+	}
+	.map__label-body {
+		flex-direction: column;
+	}
+	.map__column {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.lawyers__text {
+		margin: auto;
+	}
+	.information .consult {
+		background: none;
+	}
+	.menu-collapse {
+		width: 95%;
+	}
+}
+
+/* 480 - 576 px */
+
+@media screen and (max-width: 576px) {
+	h1 {
+		font-size: 46px;
+		line-height: 1.2;
+	}
+	.offer__text {
+		font-size: 24px;
+		max-width: 400px;
+	}
+	.footer .tel {
+		max-width: 100%;
+	}
+	.main-links {
+		flex-direction: column;
+		align-items: center;
+	}
+	.lawyers__title {
+		text-align: center;
+	}
+	.lawyers__text {
+		text-align: center;
+		margin: auto;
+	}
+	.information .consult .btn {
+		margin: 0 17px 15px 0;
+	}
+	.information .consult {
+		text-align: center;
+	}
+	.information .consult__wrap {
+		flex-direction: column;
+		margin-bottom: 15px;
+	}
+	.excellence .list__item {
+		padding: 50px 0 30px 0;
+	}
+	.excellence .list__item:before {
+		top: -20px;
+	}
+}
+
+/* 320 - 480 px */
+
+@media screen and (max-width: 480px) {
+	.header .tel span {
+		font-size: 0;
+	}
+	.header-iner .tel span {
+		font-size: 0;
+	}
+	.tel {
+		max-width: 28%;
+		padding: 5px;
+		font-size: 11px;
+	}
+}
+
